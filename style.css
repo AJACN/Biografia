@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: var(--fonte-texto), 'Merienda', sans-serif;
+}
+
+@font-face {
+    font-family: Berserk;
+    src: url(./cc-wild-words_ufonts.com_.ttf);
+}
+
+
+@font-face {
+    font-family: Dalek;
+    src: url(./DALEK___.ttf);
+}
+
+@font-face {
+    font-family: Garamond;
+    src: url(EBGaramond-Bold.ttf);
+}
+
+:root {
+    /* VARIÁVEIS CSS */
+    --cor1-vermelho: rgb(192, 32, 38);
+    --cor2-preto: rgb(0, 0, 0);
+    --cor3-cinza: rgb(212, 200, 200);
+    --fonte-destaque: 'Dalek';
+    --fonte-texto: Berserk;
+    --fonte-texto2: Garamond;
+}
+
+body {
+    height: 100vh;
+    color: var(--cor2-preto);
+}
+
+#linha_topo {
+    width: 100%;
+    top: 0;
+}
+
+#topo {
+    background-color: var(--cor2-preto);
+    height: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 5px solid rgba(192, 32, 38);
+}
+
+#topo #logo {
+    width: 200px;
+    height: 175px;
+}
+
+#topo h1 {
+    font-family: var(--fonte-destaque);
+    font-size: xx-large;
+    color: var(--cor3-cinza);
+
+}
+
+#mark {
+    width: 125px;
+    height: 175px;
+}
+
+#menu {
+    background-color: var(--cor2-preto);
+    display: flex;
+    justify-content: center;
+}
+
+#menu ul {
+    list-style: none;
+}
+
+#menu ul li {
+    display: inline;
+}
+
+#menu ul li a {
+    display: inline-block;
+    padding: 20px 40px;
+    color: var(--cor3-cinza);
+    font-family: var(--fonte-destaque);
+}
+
+#menu ul li a:hover {
+    background-color: var(--cor3-cinza);
+}
+
+#parte1, #parte2, #parte3, #parte4 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#parte1 figure {
+    margin-right: 20px;
+}
+
+#parte2 figure {
+    margin-left: 20px;
+}
+
+#parte3 figure {
+    margin-right: 20px;
+}
+
+#parte3 figure img {
+    height: 500px;
+}
+
+#parte1 {
+    background-color: var(--cor2-preto);
+    color: var(--cor3-cinza);
+    border-top: 5px solid rgba(192, 32, 38);
+    border-bottom: 5px solid rgba(212, 200, 200);
+}
+
+#parte2 {
+    background-color: white;
+    color: var(--cor2-preto);
+    border-bottom: 5px solid rgba(212, 200, 200);
+}
+
+#parte2 h1 {
+    font-family: var(--fonte-destaque);
+}
+
+#parte2 p {
+    font-family: var(--fonte-texto2);
+}
+
+#parte3 {
+    background-color: var(--cor2-preto);
+    color: var(--cor3-cinza);
+    border-bottom: 5px solid rgba(192, 32, 38, 0.8);
+}
+
+#parte3 h1 {
+    font-family: var(--fonte-destaque);
+}
+
+#parte3 p {
+    font-family: var(--fonte-texto2);
+}
+
+#parte4 {
+    background-color: var(--cor1-vermelho);
+    color: var(--cor2-preto)
+}
+
+#parte4 h1 {
+    font-family: var(--fonte-destaque);
+}
+
+#parte4 p {
+    font-family: var(--fonte-texto2);
+}
+
+.card {
+    color: var(--cor3-cinza);
+    width: 280px;
+    height: 350px;
+    border: 1px solid var(--cor3-cinza);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
+    background-color: var(--cor2-preto);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card figure {
+    width: 250px;
+    height: 300px;
+    background-color: var(--cor3-cinza);
+    border-radius: 10px;
+}
+
+.card figure img {
+    width: 250px;
+    height: 300px;
+    border: 5px solid var(--cor2-preto);
+    border-radius: 10px;
+}
